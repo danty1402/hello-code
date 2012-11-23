@@ -1,8 +1,31 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 50px;
+	background-image: url('/images/background.png');
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+}
+
+#search-form input[type=textbox] {
+	font-family: "Arial";
+	font-size: 30px;
+	color: #222 !important;
+	position: relative;
+	padding: .5em;
+	width: 18em;
+	height: 1em;
+	top: 50%;
+	left: 50%;
+	margin-top: 2em;
+	margin-left: -9em;
+	background-color: #ddd;
+	border: 1px solid #999;
+	box-shadow: inset 0 0 10px #aaa;
+	border-radius: 10px;
+}
+
+input::-webkit-input-placeholder {
+    color: #555;
 }
