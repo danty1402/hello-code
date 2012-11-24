@@ -3,8 +3,10 @@ extends layout
 block content
 	h1= title
 	p Welcome to #{title}
-	form(id='search-form')
-		input(type='textbox', placeholder='Type some programming language...', id="search-box")
-	#results
+	#search-form
+		input#search-box(type='textbox', placeholder='Type some programming language...', autocomplete='off')
+	#results-box
+		#status
+		ul#results
 	script(type='text/javascript', src='javascripts/jquery-1.8.3.min.js')
 	script(type='text/javascript', src='javascripts/search-box.js')
